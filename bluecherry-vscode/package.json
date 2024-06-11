@@ -1,0 +1,22 @@
+{
+  "name": "bluecherry-theme",
+  "displayName": "Bluecherry",
+  "description": "A theme that is very fruity.",
+  "version": "0.0.1",
+  "publisher": "Degenoah",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Bluecherry",
+        "uiTheme": "vs-dark",
+        "path": "themes/bluecherry.json"
+      }
+    ]
+  }
+}

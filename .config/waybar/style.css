@@ -1,0 +1,120 @@
+/*
+$theme_background:     #0d1b2a;
+$theme_foreground:     #f4cac3;
+$theme_cursor:         #E05674;
+
+$theme_black:          #0D1B2A; // 0
+$theme_red:            #E05674; // 1
+$theme_green:          #F4CAC3; // 2
+$theme_yellow:         #F5E3B3; // 3
+$theme_blue:           #557C9E; // 4
+$theme_magenta:        #E05674; // 5
+$theme_cyan:           #A3D9E1; // 6
+$theme_white:          #F5F5F5; // 7
+
+$theme_bright_black:   #1c3a4a; // 8 
+$theme_bright_red:     #E27B8B; // 9 
+$theme_bright_green:   #F5DBD6; // 10
+$theme_bright_yellow:  #F8EBD0; // 11
+$theme_bright_blue:    #739EBB; // 12
+$theme_bright_magenta: #E27B8B; // 13
+$theme_bright_cyan:    #C2E5E8; // 14
+$theme_bright_white:   #FFFFFF; // 15
+// */
+
+* {
+    font-family: "Symbols Nerd Font", "Cascadia Code";
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: rgba(13, 27, 42, 0.5);
+    border: 2px solid rgba(224, 86, 116, 0.8);
+    border-radius: 10px;
+    color: #f4cac3;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#window {
+    margin: 0 10px;
+}
+
+#workspaces button {
+    margin: 3px 0px;
+    padding: 0 5px;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #f4cac3;
+}
+
+#workspaces button:hover {
+    /* margin: 3 0px; */
+    background: transparent;
+    border-color: rgba(224, 86, 116, 0.8);
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#workspaces button.active {
+    /* border-bottom: 2px solid rgba(224, 86, 116, 0.5); */
+    color: #E27B8B;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+.modules-right:last-child {
+    margin-right: 10px;
+}
+
+#wireplumber,
+#network, 
+#cpu, 
+#memory, 
+#custom-pacman, 
+#clock {
+    padding: 0 6px;
+    /* border: 2px solid rgba(224, 86, 116, 0.5); */
+    /* border-radius: 0px; */
+}
+
+/* 
+#cpu {
+    background-color: #F4CAC3;
+    color: #000000;
+}
+
+#memory {
+    background-color: #9b59b6;
+}
+
+#disk {
+    background-color: #964B00;
+}
+
+
+#network {
+    background-color: #2980b9;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+*/

@@ -1,0 +1,108 @@
+{
+  "name": "Bluecherry",
+  "type": "dark",
+  
+  "colors": {
+    "editor.foreground": "#F4CAC3",
+    "editor.background": "#0D1B2A",
+    "editorCursor.foreground": "#E05674",
+    "editorLineNumber.foreground": "#739EBB",
+    "editorLineNumber.activeForeground": "#F0D387",
+    "activityBar.background": "#0D1B2A",
+    "sideBar.background": "#0D1B2A",
+    "tab.activeBackground": "#557C9E80",
+    "tab.inactiveBackground": "#0D1B2A",
+    "tab.activeForeground": "#F5F5F5",
+    "tab.inactiveForeground": "#739EBB",
+    "statusBar.background": "#1C3A4A",
+    "statusBar.foreground": "#F5F5F5",
+    "terminal.background": "#0D1B2A",
+    "terminal.foreground": "#F4CAC3"
+  },
+
+  "tokenColors": [
+    {
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#4C6A7A",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "constant",
+        "entity.name.constant",
+        "variable.other.constant"
+      ],
+      "settings": {
+        "foreground": "#66D6E1"
+      }
+    },
+    {
+      "scope": [
+        "string",
+        "punctuation.definition.string"
+      ],
+      "settings": {
+        "foreground": "#9FE098"
+      }
+    },
+    {
+      "scope": [
+        "support.function",
+        "keyword.other.special-method"
+      ],
+      "settings": {
+        "foreground": "#557C9E"
+      }
+    },
+    {
+      "scope": [
+        "keyword",
+        "storage"
+      ],
+      "settings": {
+        "foreground": "#E05674"
+      }
+    },
+    {
+      "scope": [
+        "variable",
+        "identifier"
+      ],
+      "settings": {
+        "foreground": "#F5D275"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.type",
+        "entity.other.inherited-class"
+      ],
+      "settings": {
+        "foreground": "#E05696"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function",
+        "meta.function-call"
+      ],
+      "settings": {
+        "foreground": "#557C9E"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag",
+        "keyword.control"
+      ],
+      "settings": {
+        "foreground": "#E05674"
+      }
+    }
+  ]
+}

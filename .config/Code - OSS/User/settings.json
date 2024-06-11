@@ -1,0 +1,65 @@
+{
+  "editor.fontFamily": "'Symbols Nerd Font', 'Cascadia Code NF', monospace",
+  "editor.fontSize": 12,
+
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.cursorBlinking": true,
+  
+  "workbench.colorTheme": "Bluecherry",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "single",
+  
+  "editor.minimap.enabled": false,
+
+  "files.associations": {
+    "*.css": "tailwindcss",
+  },
+  
+  "autoDocstring.startOnNewLine": true,
+  "autoDocstring.docstringFormat": "sphinx-notypes",
+
+  // 
+  // Language specific options.
+  // 
+
+  "[javascript][typescript][javascriptreact][typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  "[html][css]": {
+    "editor.tabSize": 2,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  
+  "[json][jsonc]": {
+    "editor.tabSize": 2,
+    "editor.quickSuggestions": { "strings": true },
+    "editor.suggest.insertMode": "replace"
+  },
+  
+  "[c][cpp]": {
+    "editor.tabSize": 4,
+    
+    "editor.rulers": [
+      { "column": 80 }
+    ]
+  },
+
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.tabSize": 4,
+
+    "editor.rulers": [
+      { "column": 80 }
+    ]
+  },
+  
+  "[lua]": {
+    "editor.tabSize": 2,
+  },
+  "explorer.confirmDragAndDrop": false,
+  "window.menuBarVisibility": "toggle"
+}

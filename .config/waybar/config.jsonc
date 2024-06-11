@@ -1,0 +1,74 @@
+{
+  "spacing": 4,
+
+  "height": 30,
+  "margin": "10 10 0 10",
+
+  "modules-left": ["hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["custom/pacman", "wireplumber", "cpu", "memory", "network", "clock"],
+  
+  "reload_style_on_change": true,
+
+  "hyprland/window": {
+    // "format": "{}",
+    "max-length": 80
+  },
+
+  "hyprland/workspaces": {
+    "active-only": false,
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    // "format": "{name}",
+    "persistent-workspaces": {
+      "*": 4
+    }
+  },
+
+  "cpu": {
+    "format": "{usage}% "
+    // "tooltip": false
+  },
+
+  "memory": {
+    "format": "{}% "
+  },
+
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "scroll-step": 0.2,
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "hyprctl dispatch 'exec [float] helvum'",
+    "format-icons": ["", "", ""]
+  },
+
+  "custom/pacman": {
+    "format": "{} ",
+    "tooltip-format": "{}",
+    "interval": 3600, // every hour
+    "exec": "checkupdates | wc -l", // # of updates
+    "exec-if": "exit 0", // always run; consider advanced run conditions
+    // Update system when clicked.
+    "on-click": "kitty /bin/sh -c 'sudo pacman -Syu'; pkill -SIGRTMIN+8 waybar",
+    "signal": 8
+  }
+
+  // TODO: https://github.com/Alexays/Waybar/wiki/Module:-Cava
+}
